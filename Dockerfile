@@ -4,7 +4,7 @@ WORKDIR /opt
 VOLUME /opt/coin
 
 # daemon, wallet
-EXPOSE 20206 20209
+EXPOSE 20209 20206
 
 RUN apt-get update && apt-get install -y wget
 RUN wget https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_linux_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz -O - | tar --strip-components 2 -C /opt/ -xzf -

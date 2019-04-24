@@ -1,6 +1,7 @@
 # dero-docker
 Dockerfile for dero
 
+Wallet listening on port 20206, and daemon on 20209.
 
 # Building
 

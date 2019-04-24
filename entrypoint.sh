@@ -12,9 +12,9 @@ if test $# -eq 0; then
     /opt/dero-wallet-cli-linux-amd64 --wallet-file $wallet_file --password ""
   }
   # start node
-  /opt/derod-linux-amd64 --data-dir /opt/coin/data --rpc-bind 0.0.0.0:20206 </dev/null &
+  /opt/derod-linux-amd64 --data-dir /opt/coin/data --rpc-bind 0.0.0.0:20209 </dev/null &
   # wallet api
-  exec /opt/dero-wallet-cli-linux-amd64 --wallet-file $wallet_file --password "" --unlocked --daemon-address 127.0.0.1:20206 --rpc-server --rpc-bind 0.0.0.0:20209
+  exec /opt/dero-wallet-cli-linux-amd64 --wallet-file $wallet_file --password "" --unlocked --daemon-address 127.0.0.1:20209 --rpc-server --rpc-bind 0.0.0.0:20206
 else
   exec $@
 fi
