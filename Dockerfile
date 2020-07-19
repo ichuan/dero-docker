@@ -7,7 +7,7 @@ VOLUME /opt/coin
 EXPOSE 20209 20206
 
 RUN apt-get update && apt-get install -y wget
-RUN wget https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_linux_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz -O - | tar --strip-components 2 -C /opt/ -xzf -
+RUN wget https://github.com/deroproject/derosuite/releases/download/Version_P2P_bug_fix/dero_linux_amd64_2.2.1-0.Atlantis.Astrobwt+03072020.tar.gz -O - | tar --strip-components 2 -C /opt/ -xzf -
 
 # cleanup
 RUN rm -rf /var/lib/apt/lists/*
